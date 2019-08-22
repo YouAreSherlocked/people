@@ -29,13 +29,18 @@ class Card extends Component {
     }
   }
 
+  openDetailPage(title) {
+    window.location = `/detail/${title.toLowerCase()}`
+  }
+
   render() {
     return (
-      <div className={`card ${this.props.title}`} 
-           style={{backgroundImage: `url(${this.props.bg})`, backgroundSize: this.state.active ? '280%': 'cover'}} 
-           onMouseOver={(e) => this.activate(e)} 
-           onMouseLeave={(e) => this.deactivate(e)}>
-        <h2>{this.props.title}</h2>
+      <div className={`card ${this.props.title} ${this.state.active ? ' active' : ''}`}
+           onMouseOver={(e) => this.activate(e)}
+           onMouseLeave={(e) => this.deactivate(e)}
+           onClick={() => this.openDetailPage(this.props.title)}>
+        <h2 className={this.state.active ? 'active-title' : ''}>{this.props.title}</h2>
+        <div className="card-img" style={{backgroundImage: `url(${this.props.bg})`, transform: `translate(${this.state.active ? '-20px' : '0'}, 0)`}} ></div>
         <p>{this.props.description}</p>
       </div>
     );
