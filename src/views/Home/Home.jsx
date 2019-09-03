@@ -9,6 +9,7 @@ class Home extends Component {
   reload() {
     window.location = '/';
   }
+  
   render() {
     return (
       <Fragment>

@@ -32,11 +32,11 @@ h1 {
 }
 
 .home-cards .card.active {
-  flex: 1.1;
+  /* flex: 1.1; */
   -webkit-transition: all .4s ease;
   -ms-transition: all .4s ease;
   transition: all .4s ease;
-  background-color: #555;
+  background: #E5CA44;
 }
 
 .home-cards .card .card-img {
@@ -53,12 +53,20 @@ h1 {
   background-blend-mode: multiply;
 }
 
+.home-cards .card.active .card-img {
+  background: none !important;
+}
+
 .home-cards .card h2 {
   font-size: 40px;
   position: relative;
   top: 60%;
   left: 20%;
   z-index: 1;
+}
+
+.home-cards .card.active h2 {
+  color: #333;
 }
 
 h2 {
@@ -81,9 +89,77 @@ h2.active-title:after {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  background-color: #E5CA44;
+  top: -10px;
+  background-color: #333;
   z-index: 1;
   width: 200px;
   height: 5px;
 }
+
+h3 {
+  font-size: 50px;
+  text-align: center;
+  margin: 200px auto 200px;
+  /* background: #E5CA44; */
+  width: 500px;
+  height: 80px;
+  padding: 10px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.header > img {
+  height: 26px;
+  width: auto;
+  cursor: pointer;
+}
+
+.detail > .imgs {
+  width: 1200px;
+  margin: auto;
+}
+
+.detail > .imgs > .photo-wrapper {
+  width: 100%;
+  margin-bottom: 240px;
+}
+
+.detail > .imgs > .photo-wrapper> img {
+  width: 100%;
+}
+
+.detail > .imgs > .photo-wrapper > p:last-child {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.metadata {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.metadata > img {
+  height: 30px;
+  width: auto;
+}
+
+.metadata > p {
+  margin: 0 100px 0 18px;
+  font-size: 20px;
+}
+
+footer {
+  height: 60px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
