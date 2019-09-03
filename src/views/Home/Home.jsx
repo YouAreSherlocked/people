@@ -26,6 +26,11 @@ class Home extends Component {
           text="">
         </Card>
         <Card
+          bg={imgPhoto}
+          title="Livestream"
+          text="">
+        </Card>
+        <Card
           bg={imgDocu}
           title="Documentation"
           text="">

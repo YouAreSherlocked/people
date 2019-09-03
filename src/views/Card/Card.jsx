@@ -39,7 +39,7 @@ class Card extends Component {
            onMouseLeave={(e) => this.deactivate(e)}
            onClick={() => this.openDetailPage(this.props.title)}>
         <h2 className={this.state.active ? 'active-title' : ''}>{this.props.title}</h2>
-        <div className="card-img" style={{backgroundImage: `url(${this.props.bg})`, transform: `translate(${this.state.active ? '-20px' : '0'}, 0)`}} ></div>
+        <div className="card-img" style={{backgroundImage: `url(${this.props.bg})`}} ></div>
         <p>{this.props.description}</p>
       </div>
     );
