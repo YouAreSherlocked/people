@@ -14,7 +14,7 @@ class Home extends Component {
     return (
       <Fragment>
       <div className="home-cards">
-      <h1 onClick={this.reload}>People</h1>
+      <h1 onClick={this.reload}>People at Work</h1>
         <Card
           bg={imgVideo}
           title="Video"

@@ -8,11 +8,13 @@ class DetailLivestream extends Component {
     return (
       <div className="detail detail-photo">
       <GoHome></GoHome>
-        <h3>Video</h3>
+        <h3>Livestream</h3>
         <div className="imgs">
           <div className="photo-wrapper">
           <iframe className="livestream" src="https://www.youtube.com/embed/EEIk7gwjgIM?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="livestream"></iframe>
-            <p>About</p>
+            <br></br>
+            <br></br>
+            <p>NASA ISS Live Stream</p>
           </div>
         </div>
       </div>
