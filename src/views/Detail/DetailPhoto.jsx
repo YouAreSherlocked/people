@@ -11,7 +11,8 @@ class DetailPhoto extends Component {
       <div className="detail detail-photo">
       <GoHome></GoHome>
         <h3>Photos</h3>
-        <div class="specs">
+        <div className="circle-title"></div>
+        <div className="specs">
           <p><b>Kamera </b> Nikon D750</p>
           <p><b>Objektiv </b> Nikon AF S Nikkor 50mm 1:1.8</p>
         </div>
@@ -25,7 +26,7 @@ class DetailPhoto extends Component {
             </p>
             <h4>Kamera Einstellungen</h4>
             <p>
-              In den meissten Fällen würde ich für ein Gruppenfoto eine eher offene Blende wählen, damit
+              In den meissten Fällen würde ich für ein Gruppenfoto eine eher geschlossene Blende wählen, damit
               alle Personen auch versetzt voneinander sich im Schärfebereich befinden. Da ich jedoch mit 
               einem 50mm Objektiv von recht weit weg fotografieren konnte, erübrigte sich dies und ich konnte 
               so im eher dunklen Raum alles aus der Blende holen und so ein schärferes Bild ermöglichen.

@@ -39,6 +39,7 @@ class Card extends Component {
            onMouseLeave={(e) => this.deactivate(e)}
            onClick={() => this.openDetailPage(this.props.title)}>
         <div className="card-img" style={{backgroundImage: `url(${this.props.bg})`}} ></div>
+        <div className="card-img-icon" style={{backgroundImage: `url(${this.props.icon})`}} ></div>
       </div>
     );
   };
